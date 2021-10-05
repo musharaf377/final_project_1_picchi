@@ -1,0 +1,514 @@
+/* All Device responsive */
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .container {
+        width: 940px;
+    }
+
+    .about-area {
+        .about {
+            .about-image {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .testimonial-area {
+        .testimonial {
+            .single-testimonial {
+                .client {
+                    .client-content {
+                        width:60%;
+                    }
+
+                    .client-image {
+                        width: 38%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* tablet Layout: 768px. */
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    .container {
+        width: 750px;
+    }
+
+    /* header area responsive tablet */
+    .header-area {
+        .header {
+            .logo {
+                a {
+                    position: fixed;
+                    top: 16px;
+                }
+            }
+        }
+
+        &.sticky {
+            background: #333;
+            position: fixed;
+            top: 0px;
+            padding-top: 27px;
+        }
+    }
+
+    .slicknav_menu {
+        display: block;
+        position: fixed;
+        right: 0;
+        align-items: center;
+        z-index: 999;
+        background-color: transparent;
+        width: 100%;
+
+        ul {
+            background-color: #333;
+        }
+
+    }
+
+    .menu {
+        display: none;
+    }
+
+    a.slicknav_btn.slicknav_collapsed {
+        background: transparent;
+    }
+
+    /* banner responsive tablet */
+    .banner-area {
+        .banner-content {
+            h1 {
+                font-size: 50px;
+            }
+        }
+    }
+
+    /* about area responsive tablet */
+    .about-area {
+        .about {
+            .about-image {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    /* feature area responsive tablet */
+    section.feature-area {
+
+        &::after,
+        &::before {
+            display: none;
+            background-color: transparent !important;
+        }
+
+        .feature {
+            .feature-content {
+                width: 100%;
+            }
+        }
+    }
+
+    /* service area responsive tablet */
+    .service-area {
+        .service {
+            .service-box {
+                .single-service {
+                    width: 48%;
+                }
+            }
+        }
+    }
+
+    /* process area responsive tablet */
+    .process-area {
+        .process {
+            .process-single-box {
+                grid-template-columns: repeat(2, 48%);
+                column-gap: 30px;
+
+            }
+        }
+    }
+
+    /* project area responsive tablet */
+    .project-area {
+        .project {
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+
+    /* team area responsive tablet */
+    .team {
+        .single-team{
+            width: 32%;
+            height: 300px;
+        }
+    }
+
+    /* prcie area responsive  tablet */
+    .price-area {
+        .price {
+            .single-price {
+                padding: 25px 5px;
+            }
+        }
+    }
+
+    /* testiminials area responsive tablet */
+    .testimonial-area {
+        .testimonial {
+            .single-testimonial {
+                padding: 30px 15px;
+
+                .client {
+                    margin-top: 20px;
+
+                    .client-content {
+                        width: 60%;
+                        margin-left: 20px;
+
+                        h3 {
+                            font-size: 17px;
+                            line-height: 16px;
+
+                            span {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+
+                    .client-image {
+                        width: 38%;
+                    }
+
+                }
+
+                i {
+                    font-size: 40px;
+                }
+            }
+
+            .slick-slide {
+                margin: 0px 5px;
+            }
+        }
+    }
+
+
+    /* blog area responsive tablet */
+    .blog-area {
+        .blog {
+            .single-blog {
+                .blog-image {
+                    .blog-meta {
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* contact area responsive tablet*/
+
+    .contact-area {
+        .contact {
+            .contact-content {
+                width: auto;
+            }
+
+            .contact-form {
+                width: auto;
+                padding: 20px 50px;
+            }
+        }
+    }
+
+
+
+}
+
+/* ======================================================= */
+
+
+
+/* Mobile Layout: 320px. */
+@media screen and (max-width:767px) {
+    .container {
+        width: 300px;
+    }
+
+    /* header area responsive mobile */
+    .slicknav_menu {
+        display: block;
+        position: fixed;
+        right: 0;
+        align-items: center;
+        z-index: 999;
+        background-color: transparent;
+        width: 100%;
+        margin-top: 10px;
+
+        ul {
+            background-color: #333;
+        }
+
+    }
+
+    .menu {
+        display: none;
+    }
+
+    a.slicknav_btn.slicknav_collapsed {
+        background: transparent;
+    }
+
+    /* banner area responsive mobile*/
+    .banner-area {
+        .banner-content {
+            h1 {
+                font-size: 30px;
+                line-height: 33px;
+            }
+
+            p {
+                display: none;
+            }
+
+            h5 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    /* about area responsive mobile*/
+    .about-area {
+        .about {
+            grid-template-columns: auto;
+            grid-row-gap: 30px;
+        }
+
+        .about-bottom {
+            grid-template-columns: repeat(1, auto);
+            grid-row-gap: 20px;
+
+            .about-box {
+                padding: 0px;
+                margin: 0px;
+
+                i {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+
+
+    /* feature area responsive tablet */
+    section.feature-area {
+
+        &::after,
+        &::before {
+            display: none;
+            background-color: transparent !important;
+        }
+
+        .feature {
+            .feature-content {
+                width: 100%;
+
+                .feature-box {
+                    .single-feature {
+                        width: auto;
+
+                        i {
+                            font-size: 40px;
+                        }
+
+                        h2 {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* service area responsive mobile */
+    .service-area {
+        .service {
+            .service-box {
+                .single-service {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    /* process area responsive mobile*/
+    .process-area {
+        .process {
+            .process-single-box {
+                grid-template-columns: auto;
+                column-gap: 30px;
+
+            }
+        }
+    }
+
+    /* project area responsive mobile*/
+    .project-area {
+        .project {
+            grid-template-columns: auto;
+            grid-row-gap: 20px;
+        }
+    }
+
+    /* counter area responsive mobile*/
+    .counter-area {
+        .counter {
+            .single-counter {
+                width: 100%;
+                margin: 20px 0px;
+            }
+        }
+    }
+
+    /* team area responsive mobile */
+    .team-area {
+        .team {
+            .single-team {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    /* video area responsive mobile */
+    .video-area {
+        .video {
+            h4 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    /* price area responsive mobile */
+    .price-area {
+        .price {
+            .single-price {
+                width: 100%;
+                padding: 25px 15px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    /* testimonials responsive mobile */
+    .testimonial-area {
+        .testimonial {
+            .slick-dots {
+                width: 100%;
+                margin: 30px auto;
+                text-align: center;
+            }
+
+            .single-testimonial {
+                padding: 30px 15px;
+            }
+
+        }
+
+        .slick-slide {
+            margin: 0px;
+        }
+    }
+
+    /* blog area responsive tablet */
+    .blog-area {
+        .blog {
+            grid-template-columns: auto;
+            grid-row-gap: 30px;
+
+        }
+    }
+
+    /* subscrib area responsive mobile */
+    .subscribe-area {
+        .subscribe input[type="submit"] {
+            position: relative;
+            width: auto;
+            left: 25%;
+            top: 18px;
+
+        }
+
+        .subscribe {
+            width: 300px;
+        }
+    }
+
+    /* contact area responsive tablet*/
+    .contact-area {
+        .contact {
+            .contact-content {
+                width: auto;
+
+                .contact-info {
+                    width: 100%;
+                    margin: 15px 0px;
+                }
+            }
+
+            .contact-form {
+                width: auto;
+                padding: 0px;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .section-title {
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+
+}
+
+/* wide mobile Layout: 480px. */
+@media only screen and (min-width:480px) and (max-width:767px) {
+    .container {
+        width: 450px;
+    }
+
+    .testimonial-area {
+        .testimonial{
+            .single-testimonial{
+                .client{
+                    .client-image{
+                        width: 35%;
+                    }
+                    .client-content{
+                        width: 60%;
+                    }
+                }
+            }
+            .slick-slide{
+                margin:0px 5px;
+            }
+        }
+    }
+}

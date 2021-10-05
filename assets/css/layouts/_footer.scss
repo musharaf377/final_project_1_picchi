@@ -1,0 +1,20 @@
+/* footer section style */
+section.footer-area {
+    background: #333;
+
+    .footer {
+        text-align: center;
+
+        a {
+            color: #fff;
+            margin: 0px 10px;
+            font-size: 20px;
+        }
+    }
+
+    .footer-content {
+        color: #fff;
+        margin-top: 10px;
+        text-transform: capitalize;
+    }
+}

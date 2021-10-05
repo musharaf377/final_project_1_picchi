@@ -1,0 +1,36 @@
+/* process area style*/
+.process-area{
+    @include bg;
+    color: #fff;
+    .process {
+        .process-single-box {
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            column-gap: 25px;
+            .single-process{
+              
+                h2 {
+                    text-transform: capitalize;
+                    background: #ff7720;
+                    font-size: 20px;
+                    padding: 5px 15px;
+                    position: relative;
+                    border-radius: 5px;
+                    span {
+                        background: tomato;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        padding: 5px 18px;
+                    }
+                }
+                P{
+                    text-align: center;
+                    margin:15px 0px;
+                }
+                
+            }
+        }
+        
+    } 
+}

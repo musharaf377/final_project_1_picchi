@@ -1,0 +1,43 @@
+/* partner section style */
+.partner-area {
+    background: #ddd;
+
+    .partner {
+    
+        padding-top: 10px;
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            background: #ff7720;
+            border: 0;
+            color: #fff;
+            width: 45px;
+            height: 40px;
+            transform: translateY(-50%);
+            border-radius: 4px;
+
+            
+
+            i {
+                font-size: 22px;
+            }
+
+            &.slick-prev {
+                left: -70px;
+            }
+
+            &.slick-next {
+                right: -70px;
+            }
+        }
+       
+
+        .single-partner {
+            margin: 10px;
+            img{
+                width: 70%;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,66 @@
+/* feature section style */
+.feature-area {
+    background: #ddd;
+    position: relative;
+    &:after{
+        position: absolute;
+        content: "";
+        width: 48%;
+        height: 100%;
+        top:0;
+        right: 0;
+        background-image: url(../../assets/img/features/feature-1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+       
+    }
+    &:before{
+        position: absolute;
+        content: "";
+        width: 48%;
+        height: 100%;
+        top:0;
+        right: 0;
+        background-color: #000;
+        background-repeat: no-repeat;
+        z-index: 2;
+        opacity: .75;
+    }
+    .feature {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .feature-content{
+            width: 50%;
+            padding: 70px 30px;
+            .section-title {
+                margin-bottom: 30px;
+            }
+            
+            .feature-box {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .single-feature {
+                    width: 48%;
+                    margin: 20px 0px;
+                    i {
+                        font-size: 20px;
+                    }
+                    
+                    h2 {
+                        text-transform: capitalize;
+                        margin: 10px 0px;
+                    }
+                }
+            }
+                 
+        }
+       
+       
+    }
+    
+}
+

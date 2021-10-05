@@ -1,0 +1,35 @@
+/* subscribs area section style */
+.subscribe-area {
+    @include bg;
+    color: #fff;
+    .subscribe {
+        width: 670px;
+        margin: 0 auto;
+        form{
+            position: relative;
+        }
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 0;
+            border-radius: 20px;
+            position: relative;       
+        }
+        input[type=submit] {
+            position: absolute;
+            width: auto;
+            right: -2px;
+            top: 0;
+            padding: 10px 25px;
+            background: tomato;
+            border: 0;
+            outline: 0;
+            font-size: 17px;
+            color: #fff;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        
+    }
+}
+

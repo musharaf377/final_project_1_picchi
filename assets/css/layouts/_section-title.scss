@@ -1,0 +1,41 @@
+/* section title style */
+.section-title {
+    max-width: 670px;
+    margin: 0 auto 70px;
+
+    h1 {
+        text-transform: capitalize;
+        position: relative;
+        margin-bottom: 9px;
+        padding-bottom: 7px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: tomato;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+
+    h1 {
+        text-transform: capitalize;
+        position: relative;
+        margin-bottom: 9px;
+        padding-bottom: 7px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: tomato;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+}

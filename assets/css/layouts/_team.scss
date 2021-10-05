@@ -1,0 +1,48 @@
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .single-team {
+        width: 31%;
+        background-size: cover;
+        background-position:top;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        
+        &:hover{
+            .team-content {
+                position: absolute;
+                bottom: 0;
+                padding: 20px 0px;
+                border-radius: 150px 0px 0px 0px;
+                a {
+                    color: #fff;
+                    margin: 0px 7px;
+                }
+            }
+        } 
+        .team-content {
+            color: #fff;
+            position: absolute;
+            left: 0;
+            bottom: -118px;
+            background: #333;
+            text-align: center;
+            transition: .3s;
+            width: 100%;
+            padding: 10px 0px;
+
+            h1 {
+                font-size: 25px;
+                text-transform: capitalize;
+                line-height: 30px;
+                span {
+                    font-size: 16px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

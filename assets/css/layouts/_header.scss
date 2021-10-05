@@ -1,0 +1,52 @@
+/* Header area style */
+header.header-area {
+    padding: 25px 0;
+    position: fixed;
+    left:0;
+    right: 0;
+    z-index: 99;
+    transition: .3s;
+    &.sticky {
+        background: #333;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        align-items: center;
+        .logo a {
+            font-size: 25px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: block;
+            color:#fff;
+        }
+        .menu ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            li {
+                margin-left: 26px;
+                &.current{
+                    a{
+                        color:#ff7720;
+                    }
+                }
+                a {
+                    font-size: 19px;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    transition:.4s;
+                    color:#fff;
+                    &:hover{
+                        color:#ff7720;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.slicknav_menu {
+    display: none;
+}
